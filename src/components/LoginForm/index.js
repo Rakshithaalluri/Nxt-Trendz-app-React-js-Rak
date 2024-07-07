@@ -11,15 +11,12 @@ class LoginForm extends Component {
     showSubmitError: false,
     errorMsg: '',
   }
-
   onChangeUsername = event => {
     this.setState({username: event.target.value})
   }
-
   onChangePassword = event => {
     this.setState({password: event.target.value})
   }
-
   onSubmitSuccess = jwtToken => {
     const {history} = this.props
 
